@@ -1,0 +1,23 @@
+<div class="row">
+        <div class="top col-xs-1 padding">
+            <a class="btn fa fa-mail-reply" href="#!/" title="返回首页"></a>
+        </div>
+        <div class="top col-xs-10">
+            <strong>频道管理</strong>
+        </div>
+        <div class="top col-xs-1 padding"></div>
+</div>
+<div class="ngview-container">
+    <div class="channel-title">点击删除频道</div>
+    <ul class="">
+        <!-- 使用filter过滤出switch为true的频道 -->
+        <li ng-repeat="item in list|filter:{'switch':true}" class="channel" ng-if="item.status" ng-click="item.status=!item.status">{{item.title}}</li>
+    </ul>
+    <div class="clear"></div>
+     
+    <div class="channel-title">点击添加频道</div>
+    <ul class="">
+        <li ng-repeat="item in list" class="channel" ng-if="!item.status" ng-click="item.status=!item.status">{{item.title}}</li>
+    </ul>
+    <div class="clear"></div>
+</div>    

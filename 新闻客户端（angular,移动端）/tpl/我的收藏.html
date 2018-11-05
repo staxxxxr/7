@@ -1,0 +1,35 @@
+<div class="row">
+        <div class="top col-xs-1 padding">
+            <a class="btn fa fa-mail-reply" href="#!/我的主页" title="返回我的主页"></a>
+        </div>
+        <div class="top col-xs-10">
+            <strong>我的收藏</strong>
+        </div>
+        <div class="top col-xs-1 padding"></div>
+</div>
+
+<section >
+        <ul>
+            <!-- 遍历数据listdata，并过滤渲染出used为true的数据 -->
+            <li ng-repeat="item in listdata" ng-if="item.used" class="newslist-container my-border">
+                <div class="my-bg row">
+                    <div class="newslist-left col-xs-3">
+                        <a ng-href="{{'#!/新闻详情页/'+item.id}}">
+                            <img class="newslist-img" ng-src="{{item.pic}}" ng-title="{{item.title}}" alt="图片未找到">
+                        </a>
+                        <!-- 点击改变当前新闻的used状态为false -->    
+                        <span ng-click="item.used=!item.used" class="btn my-btn" title="点击取消收藏"><i class="fa fa-folder" id="collection-btn"></i>&nbsp;取消收藏</span>
+                    </div>
+                    <div class="newslist-right col-xs-9">
+                        <a ng-href="{{'#!/新闻详情页/'+item.id}}">
+                            <div class="newslist-title" ng-title="{{item.title}}">{{item.title}}</div>
+                        </a>    
+                        <div class="newslist-bottom">
+                            <span class="datetimes">{{item.datetimes}}</span>
+                            <span class="from">{{item.auther}}</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>    

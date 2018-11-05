@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻客户端</title>
+    <!-- 引入bootstrap -->
+    <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- 矢量图标 -->
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <!-- 自定义CSS库 -->
+    <!-- <link href="./css/ext.css" rel="stylesheet"> -->
+    <!-- 页面样式 -->
+    <link href="./style.css" rel="stylesheet">
+    
+</head>
+<body ng-controller="getlist">
+
+
+    <!-- 分页容器 -->
+    <section ng-controller="a" class="container">
+        <div ng-view></div>
+        
+    </section>
+    
+    
+
+
+    <!-- angular -->
+    <script src="./angular-1.6.2/angular.js"></script>
+    <!-- angular路由 -->
+    <script src="./angular-1.6.2/angular-route.js"></script>
+    <!-- angular识别html -->
+    <script src="./angular-1.6.2/angular-sanitize.js"></script>
+    <!-- 轮播图专用 -->    
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <!-- 主逻辑函数 -->
+    <script src="./app.js" ></script>
+</body>
+</html>

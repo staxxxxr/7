@@ -1,0 +1,24 @@
+<div class="row">
+        <div class="top col-xs-1 padding">
+            <a class="btn fa fa-mail-reply" href="#!/" title="返回首页"></a>
+        </div>
+        <div class="top col-xs-10">
+            <strong>新闻详情</strong>
+        </div>
+        <div class="top col-xs-1 padding">
+            <!-- 使用filter过滤出showid的新闻数据,点击改变当前新闻的used状态,used为true时添加class,为false时移除class -->
+            <a ng-repeat="item in showinfo|filter:{'id':showid}:true" ng-click="item.used=!item.used" ng-class="{'star-bg':item.used}" class="btn fa fa-star" title="点击添加到收藏夹"></a>
+        </div>
+</div>
+<!-- 使用filter过滤出showid的新闻数据 -->
+<div class="ngview-container" ng-repeat="item in showinfo|filter:{'id':showid}:true">
+    <div class="content-title text-center" ng-bind="item.title"></div>
+    <div class="content-time text-center">
+        <span ng-bind="item.datetimes"></span>&nbsp;&nbsp;&nbsp;
+        <span ng-bind="item.auther"></span>
+    </div>
+    <img class="content-img" ng-src="{{item.pic}}" ng-title="{{item.title}}" alt="图片未找到">    
+    <div class="content-content" ng-bind-html="item.content"></div>
+    
+     
+</div>    

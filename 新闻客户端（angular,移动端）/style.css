@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
+}
+body{
+    background: #a4bdd1; 
+}
+.padding{
+    padding: 0;
+}
+.margin{
+    margin-top: 0;
+}
+.clear{
+    clear: both;
+}
+.ngview-container{
+    padding: 20px 10px 40px 10px;
+}
+input::placeholder{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*------------------顶部标题栏-----------------*/
+.container{
+    max-width: 768px;
+    min-width: 320px;
+    margin: 0 auto 0 auto;
+    background-color: #f5f5f7;
+}
+.top{
+    height: 40px;
+    background-color: #c62f2f;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.top a,.top strong{
+    font-size: 20px;
+    color: white;
+    padding: 0;
+}
+.top a{
+    cursor: pointer;
+}
+.fa-neuter{
+    transform: rotate(-45deg);
+}
+
+.top-title{
+    background-color: #f5f5f7;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.item-title{
+    float: left;
+    padding: 8px 8px;
+    font-size: 15px;
+    color: #656567;
+    font-weight: bold;
+    cursor: pointer; 
+}
+.top-btn{
+    text-align: center;
+    padding: 0;
+}
+.top-btn i{
+    color: #c62f2f;
+    cursor: pointer;
+    font-size: 16px;
+}
+.item-title:hover{
+    color: #c62f2f;
+}
+
+
+
+/*------------------新闻列表----------------*/
+.channel-bg{
+    color: rgb(219, 19, 19);
+    /* font-size: 16px; */
+}
+@media screen and (max-width: 440px) {
+    .newslist-left{
+    width: 33%;
+}
+}
+@media screen and (max-width: 440px) {
+    .newslist-right{
+    width: 67%;
+    padding-left: 10px;
+}
+}
+.newslist-container{
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #cacad3;
+}
+.newslist-title{
+    font-weight: bold;
+    color: #4c4c4e;
+    cursor: pointer;
+}
+.newslist-img{
+    min-width: 90px;
+    max-height: 100px;
+    width: 100%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.datetimes,.from{
+    color: #656567;
+}
+.from{
+    position: absolute;
+    right: 30px;
+}
+.newslist-bottom{
+    padding-top: 30px;
+}
+
+
+
+
+
+/*------------------轮播图----------------*/
+.carousel-container{
+    max-width: 768px;
+    margin: 0 -15px 0 -15px;
+}
+.carousel-inner .item img{
+    height: 200px;
+    padding: 0;
+}
+
+
+/*------------------频道管理页-----------------*/
+.channel{
+    float: left;
+    cursor: pointer;
+    padding: 5px 17px;
+    margin: 5px;
+    font-weight: bold;
+    color: #4c4c4e;
+    border: 1px solid ;
+    border-radius: 5px;  
+}
+.channel:hover{
+    color: #c62f2f;
+}
+.channel-title{
+    padding: 15px 0 10px 0;
+}
+
+
+/*------------------我的主页-----------------*/
+.photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.photo-padding{
+    margin: 10px 0;
+}
+.user-name{
+    font-size: 15px;
+    color: #656567;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.user-btn{
+    border-bottom: 1px solid #dedee4;
+    padding: 10px 0 10px 20px
+}
+.user-btn i{
+    cursor: pointer;
+    font-size: 20px;
+}
+.user-btn span{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4c4c4e;
+    padding-left: 20px;
+}
+.user-btn span:hover{
+    color: #c62f2f;
+}
+.user-btn1{
+    color: #2e8ded;
+}
+.user-btn3{
+    color: #c62f2f;
+}
+
+/*------------------我的收藏-----------------*/
+.my-btn{
+    background-color: #5bc0de;
+    color: white;
+    margin-top: 10px;
+}
+.my-btn:hover{
+    color: #4c4c4e;
+}
+.btn{
+    padding: 3px 10px;
+}
+.my-bg{
+    margin: 0;
+    background-color: #ededf5
+}
+.my-border{
+    border: 0;
+}
+
+
+/*------------------新闻搜索页-----------------*/
+.form-control-1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*------------------登录页-----------------*/
+.my-form-control{
+    margin: 10px auto;
+    width: 50%;
+}
+.middle{
+    display: flex;
+    align-items:center;
+}
+.my-login1{
+    background-color: #ff8659;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.my-login2{
+    border: 1px solid #ccc;
+    background-color: white;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
+.word-color1{
+    color: #c62f2f
+}
+.word-color2{
+    color: green
+}
+.word-color3{
+    color: #ff8659
+}
+.login-bottom{
+    margin-top: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+/*------------------注册页-----------------*/
+.margin-top{
+    margin-top: 10px;
+}
+.form-control-bg{
+    background-color: #faffbd
+}
+.small-padding{
+    padding: 5px 0;
+}
+.my-radio{
+    padding-top: 5px;
+    color: #656567;
+}
+.my-checkbox{
+    color: #4c4c4e;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.my-section{
+    margin-bottom: 40px;
+}
+.select-bottom {
+    margin-bottom: 10px;
+}
+.my-select{
+    width: 150px;
+    height: 25px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #656567;
+}
+.my-btn1{
+    color: white;
+    background-color: #2e8ded
+}
+.my-btn2{
+    color: white;
+    background-color: #ff8659;
+}
+.my-btn1:hover,.my-btn2:hover{
+    color: #c62f2f;
+}
+
+
+/*------------------新闻详情页-----------------*/
+.content-title{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.content-time{
+    color: #4c4c4e;
+    margin-bottom: 10px;
+}
+.content-img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content-content{
+    
+}
+.top .star-bg{
+    color: greenyellow;
+}

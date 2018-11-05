@@ -1,0 +1,55 @@
+http://interface.sina.cn/ent/feed.d.json
+
+https://cre-dp.sina.cn/api/v3/get?cateid=sina_all&cre=tianyi&mod=whome&merge=3&statics=1&up=0&down=0&length=13&offset=0&action=0
+https://cre.dp.sina.cn/api/v3/get?cateid=2L&cre=tianyi&mod=wspt&merge=3&statics=1
+历史：
+http://interface.sina.cn/ent/feed.d.json?ch=cul&col=cul&page=80
+http://interface.sina.cn/ent/feed.d.json?ch=cul&col=cul&show_num=20&page=80
+
+汽车：
+http://cre.dp.sina.cn/api/v3/get?cateid=m&mod=wauto&cre=tianyi&merge=3&statics=1&ad={%22rotate_count%22:12,%22page_url%22:%22http%3A%2F%2Fauto.sina.cn%22,%22channel%22:%22133919%22,%22platform%22:%22wap%22,%22timestamp%22:1515924404759}&length=12&up=3&down=0&action=1&_=1515924404760&callback=
+教育
+https://cre.dp.sina.cn/api/v3/get?cateid=I&cre=tianyi&mod=wedu&merge=3&statics=1&length=20&tm=1489716199&ad={%22rotate_count%22:1144,%22page_url%22:%22https%3A%2F%2Fedu.sina.cn%2F%22,%22channel%22:%22130270%22,%22platform%22:%22wap%22,%22timestamp%22:1515924429346,%22net%22:null}&action=1&up=2&down=0&length=12&_=1515924436197&callback=
+时尚
+http://cre.dp.sina.cn/api/v3/get?cateid=3Nh&cre=tianyi&mod=wfashion&merge=3&statics=1&length=20&tm=1489716199&ad={%22rotate_count%22:5932,%22page_url%22:%22http%3A%2F%2Ffashion.sina.cn%2F%22,%22channel%22:%22131036%22,%22platform%22:%22wap%22,%22timestamp%22:1515927821661,%22net%22:null}&action=1&up=2&down=0&length=12&_=1515927824733&callback=
+
+
+
+http://3g.163.com/touch/jsonp/sy/recommend/0-9.html?callback=
+
+http://3g.163.com/touch/jsonp/sy/recommend/0-9.html?hasad=1&miss=48&refresh=B02&offset=0&size=10&callback=
+
+------------
+在网上在api,找了一会儿都没发现,只能自己研究了
+
+首先附上调用地址 : http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php
+
+新闻类别     col          取值(90:国内,91:国际,92:社会,94:体育,95:娱乐,93:军事,96:科技,97:财经,98:股市,99:美股)
+
+http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90,91
+
+新闻形式     type       取值(3:视频,2:图片,空:全部)
+
+http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90,91&type=
+
+http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90,91&type=2
+
+新闻条数     num
+
+http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90,91&type=2&num=5
+------------------
+python 爬虫下载
+新浪体育
+https://cre.dp.sina.cn/api/v3/get?cateid=2L&cre=tianyi&mod=wspt
+新浪新闻
+https://cre.dp.sina.cn/api/v3/get?cateid=1o&cre=tianyi&mod=wnews
+图片
+https://cre.dp.sina.cn/api/v3/get?cateid=t_s&cre=tianyi&mod=wpic
+女性
+https://cre.dp.sina.cn/api/v3/get?cateid=2i&cre=tianyi&mod=wladies
+
+热门评论
+https://interface.sina.cn/wap_api/article_getall.d.json?docID=fxeuwws4948714&commentId=gn:comos-fxeuwws4948714:0&_=1539705541949&jsoncallback=Zepto1539705541457
+
+
+

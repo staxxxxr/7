@@ -1,0 +1,36 @@
+<div class="row">
+        <div class="top col-xs-1 padding">
+            <a class="btn fa fa-mail-reply" href="#!/" title="返回首页"></a>
+        </div>
+        <div class="top col-xs-10">
+            <strong>搜索</strong>
+        </div>
+        <div class="top col-xs-1 padding"></div>   
+</div>
+<div class="">
+        <input type="text" class="form-control-1 form-control" ng-model="inputvalue">
+        <section >
+                <ul>
+                    <!-- 使用filter过滤出title为inputvalue的新闻数据 -->
+                    <li ng-if="inputvalue" ng-repeat="item in listdata|filter:{'title':inputvalue}" class="newslist-container">
+                        <div class="row" >
+                            <div class="newslist-left col-xs-3">
+                                <a ng-href="{{'#!/新闻详情页/'+item.id}}">
+                                    <img class="newslist-img" ng-src="{{item.pic}}" ng-title="{{item.title}}" alt="图片未找到">
+                                </a>    
+                            </div>
+                            <div class="newslist-right col-xs-9">
+                                <a ng-href="{{'#!/新闻详情页/'+item.id}}">
+                                    <div class="newslist-title" title="{{item.title}}">{{item.title}}</div>
+                                </a>    
+                                <div class="newslist-bottom">
+                                    <span class="datetimes">{{item.datetimes}}</span>
+                                    <span class="from">{{item.auther}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+          
+</div>    
